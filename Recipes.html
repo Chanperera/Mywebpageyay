@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipes</title>
+	
+</head>
+<body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<body>
+
+<div class="img3" style="max-width:100px">
+
+  <img class="mySlides w3-animate-fading" src="pi.jpg" style="width:30%">
+  <img class="mySlides w3-animate-fading" src="pi2.jpg" style="width:30%">
+  <img class="mySlides w3-animate-fading" src="pi3.jpg" style="width:30%">
+  <img class="mySlides w3-animate-fading" src="pi4.jpg" style="width:30%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";
+  x[myIndex-1].style.display = "absolute";   
+  setTimeout(carousel, 3000);    
+}
+</script>
+	<header>
+		<div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a  href="About.html">About</a></li>
+				<li class="active"><a href="Recipes.html">Recipes</a></li>
+				<li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+
+				<h3 class="title2">Here are some starters for your vegan diet</h3>
+				<p>Veganism is defined as a way of living that attempts to exclude all forms of animal exploitation and cruelty, whether for food, clothing or any other purpose.
+
+For these reasons, the vegan diet is devoid of all animal products, including meat, eggs and dairy.
+
+People choose to follow a vegan diet for various reasons.</p>
+			<section>
+				<div class="button2">
+					<a href="https://minimalistbaker.com/easy-vegan-lasagna/" class="btn2" >Quick and easy Vegan Lasagna</a>
+  					<a href="https://minimalistbaker.com/creamy-vegan-garlic-pasta-with-roasted-tomatoes/" class="btn2">Easy Vegan Pasta</a>
+  					<a href="https://minimalistbaker.com/12-simple-healthy-smoothie-ideas/" class="btn2">12 Vegan Smoothies</a>
+  					
+  					<div class="gif3">
+  						<img src="https://media.giphy.com/media/3q3QK6KyDVUBzih7hB/source.gif">
+  					</div>
+  					<div class="bttn4">
+						<a href="https://www.goodhousekeeping.com/food-recipes/healthy/g807/vegan-recipes/" class="btn4">More Recipes Here</a>
+						</div>
+  			
+  		</div>
+  	</section2>
+					</ul>  
+				</div>
+
+			</ul>
+		</div>
+	</header>
+
+</body>
+</html>
